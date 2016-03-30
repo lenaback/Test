@@ -74,26 +74,26 @@ try:
             speed = max (0, speed-10)
             print 'Speed-', speed
 
-         elif keyp == 'g':
-            pi2go.startServos().
+        elif keyp == 'g':
+            pi2go.startServos()
             print 'Servos started'
-         elif keyp == 'h':
-            pi2go.stopServos().
+        elif keyp == 'h':
+            pi2go.stopServos()
             print 'Servos stopped'
 
-         elif keyp == 't':
-                setServo(0, angleV-15)
-                print 'Servo 0', angleV
-         elif keyp == 'y':
-                setServo(0, angleV+15)
-                print 'Servo 0', angleV
+        elif keyp == 't':
+            setServo(0, angleV-15)
+            print 'Servo 0', angleV
+        elif keyp == 'y':
+            setServo(0, angleV+15)
+            print 'Servo 0', angleV
 
-         elif keyp == 'u':
-                setServo(1, angleH-15)
-                print 'Servo 1', angleH
-         elif keyp == 'j':
-                setServo(1, angleH+15)
-                print 'Servo 1' angleH
+        elif keyp == 'u':
+            setServo(1, angleH-15)
+            print 'Servo 1', angleH
+        elif keyp == 'j':
+            setServo(1, angleH+15)
+            print 'Servo 1' angleH
 
         elif keyp == ' ':
             pi2go.stop()
