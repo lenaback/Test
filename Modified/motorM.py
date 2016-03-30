@@ -54,28 +54,6 @@ try:
 
         keyp = readkey()
 
-        #sERVO TESTS KULHUHUHUH
-
-            if keyp='g':
-            pi2go.startServos().
-            if keyp='h':
-            pi2go.stopServos().
-
-            if keyp= 't':
-                setServo(0, angleV-15)
-                print 'Servo 0; -15 degrees'
-            if keyp= 'y':
-                setServo(0, angleV+15)
-                print 'Servo 0; +15 degrees'
-
-            if keyp= 'u':
-                setServo(1, angleH-15)
-                print 'Servo 1; -15 degrees'
-            if keyp= 'j':
-                setServo(1, angleH+15)
-                print 'Servo 1; +15 degrees'
-
-
         if keyp == 'w' or keyp == UP:
             pi2go.forward(speed)
             print 'Forward', speed
@@ -95,6 +73,25 @@ try:
         elif keyp == ',' or keyp == '<':
             speed = max (0, speed-10)
             print 'Speed-', speed
+
+         elif keyp =='g':
+            pi2go.startServos().
+         elif keyp=='h':
+            pi2go.stopServos().
+
+         elif keyp=='t':
+                setServo(0, angleV-15)
+                print 'Servo 0; -15 degrees'
+         elif keyp=='y':
+                setServo(0, angleV+15)
+                print 'Servo 0; +15 degrees'
+
+         elif keyp=='u':
+                setServo(1, angleH-15)
+                print 'Servo 1; -15 degrees'
+         elif keyp=='j':
+                setServo(1, angleH+15)
+                print 'Servo 1; +15 degrees'
 
         elif keyp == ' ':
             pi2go.stop()
