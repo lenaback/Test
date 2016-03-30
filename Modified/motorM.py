@@ -52,11 +52,13 @@ pi2go.init()
 try:
     while True:
 
+        keyp = readkey()
+
         #sERVO TESTS KULHUHUHUH
 
-            if keyp=g:
+            if keyp='g':
             pi2go.startServos().
-            if keyp=h:
+            if keyp='h':
             pi2go.stopServos().
 
             if keyp= 't':
@@ -74,8 +76,6 @@ try:
                 print 'Servo 1; +15 degrees'
 
 
-
-        keyp = readkey()
         if keyp == 'w' or keyp == UP:
             pi2go.forward(speed)
             print 'Forward', speed
