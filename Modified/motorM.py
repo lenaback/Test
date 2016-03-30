@@ -93,7 +93,7 @@ try:
         elif keyp == 'j':
             degree = degree-15
             setServo(0, degree)
-            print 'Servo 1' degree
+            print 'Servo 1', degree
 
         elif keyp == ' ':
             pi2go.stop()
