@@ -43,9 +43,7 @@ def readkey(getchar_fn=None):
 # End of the functions that read your keyboard
 
 speed = 30
-angleV = 0
-angleH = 0
-
+degree = 0
 pi2go.init()
 
 # Main body of code - this detects your key press and changes direction depending on it
@@ -82,18 +80,18 @@ try:
             print 'Servos stopped'
 
         elif keyp == 't':
-            setServo(0, angleV-15)
-            print 'Servo 0', angleV
+            setServo(0, degree-15)
+            print 'Servo 0', degree
         elif keyp == 'y':
-            setServo(0, angleV+15)
-            print 'Servo 0', angleV
+            setServo(0, degree+15)
+            print 'Servo 0', degree
 
         elif keyp == 'u':
-            setServo(1, angleH-15)
-            print 'Servo 1', angleH
+            setServo(1, degree-15)
+            print 'Servo 1', degree
         elif keyp == 'j':
-            setServo(1, angleH+15)
-            print 'Servo 1' angleH
+            setServo(1, degree+15)
+            print 'Servo 1' degree
 
         elif keyp == ' ':
             pi2go.stop()
