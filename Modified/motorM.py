@@ -79,20 +79,20 @@ try:
 
         elif keyp == 't':
             degree = degree-15
-            setServo(0, degree)
+            pi2go.setServo(0, degree)
             print 'Servo 0', degree
         elif keyp == 'y':
             degree = degree+15
-            setServo(0, degree)
+            pi2go.setServo(0, degree)
             print 'Servo 0', degree
 
         elif keyp == 'u':
             degree = degree-15
-            setServo(0, degree)
+            pi2go.setServo(0, degree)
             print 'Servo 1', degree
         elif keyp == 'j':
             degree = degree-15
-            setServo(0, degree)
+            pi2go.setServo(0, degree)
             print 'Servo 1', degree
 
         elif keyp == ' ':
